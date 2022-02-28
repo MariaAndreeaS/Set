@@ -7,32 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
-    lazy var game = Game()
-
+class ViewController: UIViewController
+{
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViewFromModel()
+        updateUIfromModel()
     }
+    private lazy var game = Game()
 
-    @IBAction func dealButton(_ sender: UIButton) {
-        game.deal(3)
-        updateViewFromModel()
-    }
+    @IBOutlet var cardB: [ButtonCard]!
 
-    @IBOutlet private var cardButtons: [UIButton]!
-
-    @IBAction private func touchCard(_ sender: CardButtonTheme) {
-        guard let card = sender.card else { return }
-        game.chooseCard(card)
-        updateViewFromModel()
-
-    }
-    private func updateViewFromModel(){
-
+    private func updateUIfromModel() {
+        for index in cardB.indices {
+            let btn=cardB[index]
+            if index < game.cardsInGame.count {
+                guard let card = game.cardsInGame[index] else { return }
+                btn.card = card
+            } else {
+                btn.card = nil
+            }
+        }
     }
 }
-
-
-

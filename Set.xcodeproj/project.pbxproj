@@ -16,7 +16,7 @@
 		96AB59A927C6A3AC00E9992C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AB59A727C6A3AC00E9992C /* Main.storyboard */; };
 		96AB59BE27C6DBA700E9992C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB59BD27C6DBA700E9992C /* Game.swift */; };
 		96B7B76027C78657002FCD40 /* DeckCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B7B75F27C78657002FCD40 /* DeckCards.swift */; };
-		96E2BECF27C9051F00E261C4 /* CardButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2BECE27C9051F00E261C4 /* CardButtonTheme.swift */; };
+		96BBA26927CCBE3000901A9D /* ButtonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBA26827CCBE3000901A9D /* ButtonCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		96AB59A827C6A3AC00E9992C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Concentration/Concentration/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96AB59BD27C6DBA700E9992C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		96B7B75F27C78657002FCD40 /* DeckCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCards.swift; sourceTree = "<group>"; };
-		96E2BECE27C9051F00E261C4 /* CardButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonTheme.swift; sourceTree = "<group>"; };
+		96BBA26827CCBE3000901A9D /* ButtonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		96AB598727C6522C00E9992C /* Set */ = {
 			isa = PBXGroup;
 			children = (
-				96E2BECE27C9051F00E261C4 /* CardButtonTheme.swift */,
 				96B7B75F27C78657002FCD40 /* DeckCards.swift */,
+				96BBA26827CCBE3000901A9D /* ButtonCard.swift */,
 				96AB598827C6522C00E9992C /* AppDelegate.swift */,
 				96AB598A27C6522C00E9992C /* SceneDelegate.swift */,
 				96AB598C27C6522C00E9992C /* ViewController.swift */,
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B7B76027C78657002FCD40 /* DeckCards.swift in Sources */,
-				96E2BECF27C9051F00E261C4 /* CardButtonTheme.swift in Sources */,
+				96BBA26927CCBE3000901A9D /* ButtonCard.swift in Sources */,
 				96AB598D27C6522C00E9992C /* ViewController.swift in Sources */,
 				96AB59BE27C6DBA700E9992C /* Game.swift in Sources */,
 				96AB59A127C6984800E9992C /* Card.swift in Sources */,
