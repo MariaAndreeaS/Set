@@ -28,11 +28,17 @@ struct Card: Hashable
     enum Version: Int {
         case c1 = 1, c2, c3
     }
+
+   
     private static var identifierFactory = 0
 
     private static func getUniqueIdentifier() -> Int {
         identifierFactory += 1
         return identifierFactory
     }
+
 }
+
+
+
 
