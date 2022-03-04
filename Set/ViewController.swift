@@ -47,9 +47,10 @@ class ViewController: UIViewController
     }
 
     private func updateUIfromModel() {
-        if game.cardsInGame.count == 0 || game.numberOfCardsInDeck == 0 {
-            dealButton.isEnabled = true
+        if game.numberOfCardsInDeck == 0 || game.cardsInGame.count > cardB.count {
+            dealButton.isEnabled = false
         }
+
         score.text="Score \(game.score)"
         for index in cardB.indices {
             let btn = cardB[index]
